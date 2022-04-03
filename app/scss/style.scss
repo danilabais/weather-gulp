@@ -58,6 +58,14 @@
         font-size: 20rem;
         color: #332821;
         font-family: 'Alegreya Sans';
+        position: relative;
+       
+    }
+    &__title-img {
+        position: absolute;
+            right: 0;
+            top: 0;
+            transform: translateY(-100px);
     }
     &__temp {
         font-weight: 700;
@@ -123,9 +131,10 @@
 .swiper-slide {
     transition: all .3s ease;
     opacity: .7;
+
 }
  .swiper-slide-active {
-     transform: scale(1.3) !important;
+     transform: scale(1.1) !important;
      opacity: 1;
      z-index: 1;
      .additional {
@@ -165,7 +174,7 @@
     .nav {
         background: #FBFBFB;
         border-radius: 20px;
-        width: 600px;
+        width: 40vw;
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
@@ -210,9 +219,18 @@
    
 
 
-
-
-//Удалить
-p {
-    font-size: 16rem;
-}
+    @media (max-width:1870px) {
+        :root {
+            font-size: 1.7px;
+        }       
+    }
+    @media (max-width:1700px) {
+        .additional {
+            width: 40%;
+        }
+    }
+    @media (max-width:1500px) {
+        .additional {
+            width: 60%;
+        }
+    }

@@ -157,6 +157,15 @@ body {
   font-size: 20rem;
   color: #332821;
   font-family: "Alegreya Sans";
+  position: relative;
+}
+.card__title-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+          transform: translateY(-100px);
 }
 .card__temp {
   font-weight: 700;
@@ -239,9 +248,9 @@ body {
 }
 
 .swiper-slide-active {
-  -webkit-transform: scale(1.3) !important;
-      -ms-transform: scale(1.3) !important;
-          transform: scale(1.3) !important;
+  -webkit-transform: scale(1.1) !important;
+      -ms-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
   opacity: 1;
   z-index: 1;
 }
@@ -305,7 +314,7 @@ body {
 .nav {
   background: #FBFBFB;
   border-radius: 20px;
-  width: 600px;
+  width: 40vw;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,6 +373,18 @@ body {
   opacity: 0;
 }
 
-p {
-  font-size: 16rem;
+@media (max-width: 1870px) {
+  :root {
+    font-size: 1.7px;
+  }
+}
+@media (max-width: 1700px) {
+  .additional {
+    width: 40%;
+  }
+}
+@media (max-width: 1500px) {
+  .additional {
+    width: 60%;
+  }
 }
