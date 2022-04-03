@@ -1,6 +1,6 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.content', {
     // Optional parameters
-    loop: true,
+    //loop: true,
   
     // If we need pagination
    
@@ -10,6 +10,16 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
+    mousewheel: {
+      sensitivity:1,
+    },
+    speed:350,
+    slidesPerView:2.6,
+    watchOverflow:true,
+    centeredSlides: true,
+    grabCursor:true,
+    slideToClickedSlide:true,
+   
+   
    
   });
