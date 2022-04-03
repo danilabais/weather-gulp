@@ -5,3 +5,118 @@
 @import 'global';
 
 
+.main {
+    background: linear-gradient(180deg, #E75481 -22.84%, #929CDE 113.36%);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+
+}
+
+.card {
+    // width: 230px;
+    // height: 247px;
+    
+    width: 500px;
+    height: 500px;
+    background: #FBFBFB;
+    box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;//30
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0 30px;
+
+    }
+    &__additional {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20rem;
+        color: #332821;
+        font-family: 'Alegreya Sans';
+    }
+    &__temp {
+        font-weight: 700;
+        font-size: 64rem;
+        color: #332821;
+        & span {
+            font-weight: 500;
+            font-size: 14rem;
+            color: #332821;
+            vertical-align:super;
+        }
+    }
+    &__left {
+        font-weight: 500;
+        font-size: 14rem;
+        color: rgba(51, 40, 33, 0.5);
+    }
+    &__chips {
+        border-radius: 20px;
+        margin: 4px 0px;
+        font-size: 10rem;
+        line-height: 12px;
+        padding: 10px 20px;
+        text-align: center;
+        color: #FFFFFF;
+        width: fit-content;
+        &:first-child {
+            margin-top: 44px;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__chips-pink {
+        background: rgba(212, 66, 111, 0.5);
+    }
+    &__chips-blue {
+        background: rgba(106, 117, 186, 0.5);
+    }
+    &__more {
+        font-weight: 700;
+        font-size: 14rem;
+        line-height: 17px;
+        text-align: center;
+        background: #5E4FC1;
+        border-radius: 18px;
+        color: #fff;
+        padding: 25px 47px;
+        position: absolute;
+        bottom: -32px;
+        width: 60%;
+        align-self: center;
+        
+    }
+    
+}
+
+
+
+//Удалить
+p {
+    font-size: 16rem;
+}
