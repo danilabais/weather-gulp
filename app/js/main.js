@@ -6,10 +6,7 @@ const swiper = new Swiper('.content', {
    
   
     // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    
     mousewheel: {
       sensitivity:1,
     },
@@ -19,6 +16,7 @@ const swiper = new Swiper('.content', {
     centeredSlides: true,
     grabCursor:true,
     slideToClickedSlide:true,
+    spaceBetween: 250,
    
    
    
