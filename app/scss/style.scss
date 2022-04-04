@@ -7,7 +7,7 @@
 
 .main {
     background: linear-gradient(180deg, #E75481 -22.84%, #929CDE 113.36%);
-    min-height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,6 +22,7 @@
     padding: 0 20px;
     margin-top: 20px;
     width: 100%;
+    margin-bottom: 24px;
 
 }
 
@@ -63,9 +64,9 @@
     }
     &__title-img {
         position: absolute;
-            right: 0;
-            top: 0;
-            transform: translateY(-100px);
+        right: -14px;
+        top: -32px;
+            
     }
     &__temp {
         font-weight: 700;
@@ -113,10 +114,10 @@
         background: #5E4FC1;
         border-radius: 18px;
         color: #fff;
-        padding: 25px 47px;
+        padding: 15px 37px;
         position: absolute;
         bottom: -32px;
-        width: 60%;
+        width: 40%;
         align-self: center;
         transition: all .3s ease;
         &:hover {
@@ -162,6 +163,7 @@
             font-weight: 300;
             font-size: 12rem;
             color: #FFFFFF;
+            align-items: center;
         }
         &__text {
             display: flex;
@@ -174,7 +176,7 @@
     .nav {
         background: #FBFBFB;
         border-radius: 20px;
-        width: 40vw;
+        width: 420px;
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
@@ -232,5 +234,56 @@
     @media (max-width:1500px) {
         .additional {
             width: 60%;
+        }
+    }
+    @media (max-width:1350px) {
+        :root {
+            font-size: 1.5px;
+        }
+    }
+    @media (max-width:650px) {
+        :root {
+            font-size: 1.3px;
+        }
+    }
+   
+    @media (max-width:750px) {
+       
+        .card__chips {
+            padding: 5px 10px;
+        }
+        .card {
+                height: 319px;
+        }
+    }
+   
+    @media (max-width:500px) {
+        
+        .nav {
+            max-width: 90vw;
+            svg {
+                max-width: 20px;
+            }
+        }
+    }
+    @media (max-height:700px) {
+        
+        .card {
+            margin-bottom: 150px;
+            &__more {
+                bottom: -19px;
+                padding: 9px 30px;
+            }
+        }
+        .card {
+            height: 267px;
+        }
+        .additional {
+            bottom: -124px;
+        }
+    }
+    @media (max-width:320px) {
+        :root {
+            font-size: 1px;
         }
     }
